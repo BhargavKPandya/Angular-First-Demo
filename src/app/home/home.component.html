@@ -1,0 +1,40 @@
+<h1>Users</h1>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avtar">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+    </li>
+</ul>
+
+<!---<h1 [ngStyle]="{
+  'color': h1Style ? 'gray' : 'black',
+  'font-size': !h1Style ? '1em' : '4em'
+}">HOME</h1>
+<button (click)="firstClick()">Click Me</button>-->
+
+
+<!--Other useful events
+(focus)="myMethod()"
+(blur)="myMethod()" 
+(submit)="myMethod()"  
+(scroll)="myMethod()"
+
+(cut)="myMethod()"
+(copy)="myMethod()"
+(paste)="myMethod()"
+
+(keydown)="myMethod()"
+(keypress)="myMethod()"
+(keyup)="myMethod()"
+
+(mouseenter)="myMethod()"
+(mousedown)="myMethod()"
+(mouseup)="myMethod()"
+
+(click)="myMethod()"
+(dblclick)="myMethod()"
+
+(drag)="myMethod()"
+(dragover)="myMethod()"
+(drop)="myMethod()" -->
